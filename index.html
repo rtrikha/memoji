@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styling/style.scss" />
-    <title>Memoji</title>
-</head>
-<body>
-    hello
-</body>
-<script src="js/index.js"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styling/style.css" />
+        <title>WWDC20 memoji</title>
+        <meta name="description" content="create your own memoji sticker with this sketch freebie" />
+		<meta property="og:title" content="WWDC20 memoji" />
+		<meta property="og:url" content="https://memoji.2dots.xyz/" />
+		<meta property="og:description" content="create your own memoji sticker with this sketch freebie" />
+		<meta property="og:image" content="https://raw.githubusercontent.com/rtrikha/perfect-type/master/resources/logo/og.png"/>
+		<link rel="shortcut icon" type="image/png" href="./resources/logo/mainIcon.png" />
+
+	</head>
+	<body>
+		<div class="main-wrapper">
+            <div class="animated-header">
+                <video width="160" height="160" playsinline autoplay muted loop>
+                    <source src="./resources/logo/emoji.mp4" type="video/mp4">
+                  </video>
+            </div>
+
+			<div class="content">
+				<div class="heading">
+					WWDC20 insipired memoji
+				</div>
+				<div class="subheading">
+					create your own memoji sticker with this sketch freebie. The file includes 4 different body finishes and a small sticker pack to up your memoji game
+				</div>
+			</div>
+			<div class="buttons">
+				<a
+					href="https://perfect-type.s3-ap-southeast-1.amazonaws.com/memoji.sketch"
+					onmouseover="lineHeightOver();characterSpacingOver()"
+					onmouseout="lineHeightOut();characterSpacingOut()"
+					class="primary-button"
+					>Download for free</a
+				>
+			</div>
+
+			<div class="figures">
+				<figure>
+					<img src="./resources/figures/F1.png" alt="" />
+					<img src="./resources/figures/F2.png" alt="" />
+					<img src="./resources/figures/F3.png" alt="" />
+					<img src="./resources/figures/F4.png" alt="" />
+					<img src="./resources/figures/F5.png" alt="" />
+					<img src="./resources/figures/F6.png" alt="" />
+					<img src="./resources/figures/F7.png" alt="" />
+				</figure>
+				<div class="credits"> made with ♥ by <a href="https://2dots.xyz" target="blank">rtrikha</a></div>
+			</div>
+		</div>
+	</body>
+	<script src="js/index.js"></script>
 </html>

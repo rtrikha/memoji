@@ -1,8 +1,131 @@
-*{
-    margin: 0;
-    background: #000;
+@font-face {
+	font-family: AV-bold;
+	src: url(/resources/fonts/AV-Bold.ttf);
+}
+@font-face {
+	font-family: AV-medium;
+	src: url(/resources/fonts/AV-Bold.ttf);
 }
 
-body{
-    background-color: red;
+* {
+	margin: 0;
+	background-color: #000;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.main-wrapper {
+	width: 100vw;
+	margin: 0 auto;
+}
+
+.buttons {
+	width: max-content;
+	margin: 0 auto;
+	margin-top: 6vh;
+
+	.primary-button {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		font-family: AV-Medium;
+		text-decoration: none;
+		background-color: #d57a29;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		padding-left: 24px;
+		padding-right: 24px;
+		border: none;
+		display: flex;
+		font-size: 16px;
+		color: #fff;
+		cursor: pointer;
+		text-align: center;
+		line-height: 32px;
+		border-radius: 4px;
+
+		&:hover {
+			background-color: #b9681f;
+		}
+
+		&:before {
+			display: block;
+			content: ' ';
+			background-image: url('/resources/logo/sketch.svg');
+			background-size: 28px 28px;
+			height: 28px;
+			width: 28px;
+			margin-right: 1vw;
+		}
+	}
+}
+
+#blockbyte-bs-indicator {
+	display: none !important;
+}
+
+.figures {
+	bottom: 0;
+	position: fixed;
+	.credits {
+		font-size: 12px;
+		font-family: AV-Medium;
+		text-align: right;
+		margin-right: 8vw;
+		margin-bottom: 2vh;
+		margin-top: 1vh;
+        color: #555555;
+		a {
+            color: #9b9b9b;
+			text-decoration: none;
+            font-family: AV-Bold;
+
+			&:hover {
+                color: white;
+			}
+			&:visited {
+				text-decoration: none;
+				color:  #9b9b9b;
+			}
+		}
+	}
+	figure {
+		display: flex;
+		overflow-y: visible;
+		overflow-x: hidden;
+		margin-left: -9vw;
+
+		img {
+			width: 15.4%;
+		}
+	}
+}
+
+.content {
+	margin-top: 2vh;
+	text-align: center;
+
+	.heading {
+		font-size: 32px;
+		font-family: AV-Medium;
+		letter-spacing: -1px;
+		color: white;
+	}
+	.subheading {
+		width: 40%;
+		margin: 0 auto;
+		margin-top: 1vh;
+		line-height: 25px;
+		text-align: center;
+		font-size: 16px;
+		font-family: AV-Medium;
+		letter-spacing: -0.2px;
+		color: #9b9b9b;
+	}
+}
+
+.animated-header{
+    width: 88vw;
+    margin: 0 auto;
+    margin-top: 3vh;
 }
