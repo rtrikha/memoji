@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: AV-medium;
-  src: url(/resources/fonts/AV-Bold.ttf);
+  src: url(/resources/fonts/AV-Medium.ttf);
 }
 
 * {
@@ -110,6 +110,7 @@
 
 .figures figure img {
   width: 15.4%;
+  height: 15.4%;
 }
 
 .content {
@@ -152,6 +153,9 @@
 }
 
 @media (max-width: 760px) {
+  .content {
+    margin-top: 0vh;
+  }
   .content .heading {
     font-size: 28px;
   }
@@ -165,26 +169,41 @@
   }
   .figures figure img {
     width: 22%;
+    height: 22%;
   }
 }
 
 @media (max-width: 520px) {
   .animated-header {
     width: 100vw;
+    margin-top: 0vh !important;
+  }
+  .animated-header video {
+    height: 140px;
+    width: 140px;
   }
   .buttons {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
+    margin-top: 3vh;
+  }
+  .content {
+    margin-top: 0;
+  }
+  .content .heading {
+    font-size: 24px;
   }
   .content .subheading {
-    width: 80%;
+    width: 90%;
   }
   .figures .credits {
     margin-top: 2vh;
     margin-bottom: 3vh;
+    font-size: 11px;
   }
   .figures figure img {
     width: 28%;
+    height: 28%;
   }
 }
 
@@ -193,8 +212,8 @@
     width: 100vw;
   }
   .buttons {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   .content .heading {
     font-size: 26px;
@@ -208,6 +227,7 @@
   }
   .figures figure img {
     width: 36%;
+    height: 36%;
   }
 }
 
@@ -215,15 +235,12 @@
   .animated-header {
     width: 100vw;
   }
-  .buttons {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
   .content .heading {
     font-size: 22px;
   }
   .content .subheading {
     width: 80%;
+    height: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */
